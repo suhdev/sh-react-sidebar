@@ -1,0 +1,104 @@
+$sh-sidebar-font-family:sans-serif !default;
+$sh-sidebar-font-size:14px !default; 
+$sh-sidebar-border:1px solid #eee !default;
+$sh-sidebar-search-field-padding:0.4em 0.8em !default;
+$sh-sidebar-item-padding:0.4em 0.8em !default;
+$sh-sidebar-line-height:1.2em !default;
+$sh-sidebar-item-bg:#444;
+$sh-sidebar-item-fg:#fff;
+$sh-sidebar-item-selected-bg:#777;
+$sh-sidebar-item-selected-fg:#fff;
+$sh-sidebar-item-selected-strip-bg:#F83;
+
+%clearfix { 
+    &:before,&:after{
+        content:' ';
+        clear:both;
+        display:block;
+    }
+}
+
+%box{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sh-react-sidebar{
+    @extend %clearfix;
+    @extend %box;
+    font-family: $sh-sidebar-font-family;
+    font-size: $sh-sidebar-font-size;
+
+    .sh-sidebar-wrapper{
+        @extend %clearfix;
+        @extend %box;
+    }
+
+    .sh-sidebar-search-wrapper{
+        @extend %clearfix;
+        @extend %box;
+        border:$sh-sidebar-border;  
+ 
+        .sh-search-field{
+            @extend %clearfix;
+            @extend %box;
+            line-height:$sh-sidebar-line-height;
+            outline:none;
+            border:none;
+            display:block;
+            width:100%;
+            padding:$sh-sidebar-search-field-padding;
+        }
+    }
+
+    .sh-sidebar-empty,.sh-sidebar-preloader{
+        padding:$sh-sidebar-item-padding;
+    }
+
+    .sh-sidebar-items-list{ 
+        @extend %clearfix;
+        @extend %box;
+
+        overflow:auto;
+
+        .sh-sidebar-item{
+            @extend %clearfix;
+            @extend %box;
+            
+            position:relative;
+            display:block;
+            background-color: $sh-sidebar-item-bg;
+            color:$sh-sidebar-item-fg;
+            line-height:$sh-sidebar-line-height; 
+            padding:$sh-sidebar-item-padding;
+            cursor:pointer;
+            text-decoration: none;
+            &:visited,&:hover,&:active{
+                color:$sh-sidebar-item-fg;
+                text-decoration: none;
+            }
+
+            &:before{
+                content:' ';
+                display:block;
+                position:absolute;
+                top:0px;
+                left:0px;
+                width:4px;
+                height:100%;
+                background-color: #444;
+            }
+
+            &[data-selected="true"]{
+                background-color: $sh-sidebar-item-selected-bg;
+                color:$sh-sidebar-item-selected-fg; 
+
+                &:before{
+                    background-color: $sh-sidebar-item-selected-strip-bg;
+                }
+            }
+        }
+    }
+
+}

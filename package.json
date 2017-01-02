@@ -1,0 +1,52 @@
+{
+  "name": "sh-react-sidebar",
+  "version": "1.0.0",
+  "description": "A configurable sidebar component written in TypeScript. ",
+  "main": "index.js",
+  "jsnext:main": "es6.js",
+  "types":"typings/sh-react-sidebar.d.ts",
+  "typings":"typings/sh-react-sidebar.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suhdev/sh-react-sidebar.git"
+  },
+  "author": "Suhail Abood <suhail.abood@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suhdev/sh-react-sidebar/issues"
+  },
+  "homepage": "https://github.com/suhdev/sh-react-sidebar#readme",
+  "dependencies": {
+    "react": "^15.4.1"
+  },
+  "jspm": {
+    "registry": "npm",
+    "main": "es6.js",
+    "format": "es6",
+    "dependencies": {
+      "react": "^15.4.1",
+      "react-dom": "^15.4.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.4",
+    "babel-preset-es2015": "^6.18.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.0.0",
+    "ts-loader": "^1.3.3",
+    "typescript": "^2.1.4",
+    "typings": "^2.1.0",
+    "webpack": "^1.14.0"
+  }
+}
