@@ -1,6 +1,6 @@
 {
   "name": "sh-react-sidebar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A configurable sidebar component written in TypeScript. ",
   "main": "index.js",
   "jsnext:main": "es6.js",
