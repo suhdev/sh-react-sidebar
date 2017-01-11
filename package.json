@@ -1,11 +1,11 @@
 {
   "name": "sh-react-sidebar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A configurable sidebar component written in TypeScript. ",
   "main": "index.js",
   "jsnext:main": "es6.js",
-  "types":"typings/sh-react-sidebar.d.ts",
-  "typings":"typings/sh-react-sidebar.d.ts",
+  "types": "typings/sh-react-sidebar.d.ts",
+  "typings": "typings/sh-react-sidebar.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/suhdev/sh-react-sidebar#readme",
   "dependencies": {
+    "gulp": "^3.9.1",
     "react": "^15.4.1"
   },
   "jspm": {
